@@ -30,7 +30,7 @@ To build this project, you need the following items:
 
 Gather your parts then follow the schematics below.
 
-![simplinnovation](https://4.bp.blogspot.com/-f7YxPyqHAzY/WJ6VnkvE0SI/AAAAAAAADTQ/0tDQPTrVrtMAFT-q-1-3ktUQT5Il9FGdQCLcB/s350/simpLINnovation1a.png)
+![schema](https://raw.githubusercontent.com/LintangWisesa/NodeMCU_ESP8266_Antares/master/NodeMCU_Antares.png)
 
 #
 
