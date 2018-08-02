@@ -22,6 +22,7 @@ To build this project, you need the following items:
 - 1 DHT11 sensor
 - some jumper wires
 - Arduino IDE ([download here](https://www.arduino.cc/en/Main/Software))
+- DHT library ([download here](https://github.com/adafruit/DHT-sensor-library))
 - Antares ESP8266 library ([download here](https://github.com/antaresdocumentation/antares-esp8266-http))
 
 #
@@ -38,7 +39,7 @@ Gather your parts then follow the schematics below.
 
 - __Create Antares Application & Device__
 
-  Signup/login to [Antares](https://antares.id/id/index.html) then go to __*Applications*__ menu, and click _**+Add Application_** button to create a project. Fill out the forms then click __*+Add Device*__ button to create your virtual device on Antares.
+  Signup/login to [Antares](https://antares.id/id/index.html) then go to __*Applications*__ menu, and click _**+Add Application**_ button to create a project. Fill out the forms then click __*+Add Device*__ button to create your virtual device on Antares.
 
   > __*Please remember your application & device name, we'll use it later!*__
   
@@ -55,7 +56,7 @@ Gather your parts then follow the schematics below.
 ### **4. Arduino Sketch** :clipboard:
 
 - First you need to install ESP8266 platform on Arduino IDE, follow these instructions: [click here](https://github.com/esp8266/Arduino). 
-- Install manually Antares library for ESP8266 ([download here](https://github.com/antaresdocumentation/antares-esp8266-http)). Download, extract & copy its files to _**C:\\...\Documents\Arduino\libraries**_. In my case, I have to deactivate _WiFiClient library_ from *Antares library*. Simply open __*AntaresESPHTTP.h*__ file, then delete/comment this line:
+- Install manually DHT library ([download here](https://github.com/adafruit/DHT-sensor-library)) & Antares library for ESP8266 ([download here](https://github.com/antaresdocumentation/antares-esp8266-http)). Download, extract & copy its files to _**C:\\...\Documents\Arduino\libraries**_. In my case, I have to deactivate _WiFiClient library_ from *Antares library*. Simply open __*AntaresESPHTTP.h*__ file, then delete/comment this line:
   ```c++
   #include <WiFiClient.h> 
   ```
